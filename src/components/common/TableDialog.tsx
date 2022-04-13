@@ -125,13 +125,11 @@ const TableDialog: React.FC<Props> = ({
       <IconButton
         aria-label="Close"
         sx={{
-          closeButton: {
-            position: 'absolute',
-            right: '8px',
-            top: '8px',
-            color: 'secondary',
-          },
+          position: 'absolute',
+          right: '8px',
+          top: '8px',
         }}
+        color={'secondary'}
         onClick={handleClose}
         size="large">
         <Close />
@@ -145,6 +143,7 @@ const TableDialog: React.FC<Props> = ({
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           label="Search"
+          margin={'dense'}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">

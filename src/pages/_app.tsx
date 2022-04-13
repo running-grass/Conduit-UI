@@ -1,3 +1,4 @@
+import '../scripts/wdyr';
 import React, { ReactElement, ReactNode, useEffect } from 'react';
 import { ThemeProvider, Theme, StyledEngineProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
